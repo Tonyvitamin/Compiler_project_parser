@@ -1,0 +1,466 @@
+Shift PROGRAM
+Shift IDENTIFIER
+Shift LPAREN
+Shift IDENTIFIER
+reduce rule 2
+Shift COMMA
+Shift IDENTIFIER
+reduce rule 3
+Shift COMMA
+Shift IDENTIFIER
+reduce rule 3
+Shift RPAREN
+Shift SEMICOLON
+reduce rule 5
+Shift VAR
+Shift IDENTIFIER
+reduce rule 2
+Shift COMMA
+Shift IDENTIFIER
+reduce rule 3
+Shift COMMA
+Shift IDENTIFIER
+reduce rule 3
+Shift COLON
+Shift integer
+reduce rule 8
+reduce rule 6
+Shift SEMICOLON
+reduce rule 4
+Shift VAR
+Shift IDENTIFIER
+reduce rule 2
+Shift COMMA
+Shift IDENTIFIER
+reduce rule 3
+Shift COLON
+Shift ARRAY
+Shift LBRAC
+Shift DIGSEQ
+Shift DOTDOT
+Shift DIGSEQ
+Shift RBRAC
+Shift OF
+Shift integer
+reduce rule 8
+reduce rule 6
+reduce rule 7
+Shift SEMICOLON
+reduce rule 4
+Shift BEGIN
+reduce rule 12
+Shift IDENTIFIER
+Shift ASSIGNMENT
+reduce rule 35
+reduce rule 33
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift PLUS
+reduce rule 41
+reduce rule 53
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift SEMICOLON
+reduce rule 42
+reduce rule 39
+reduce rule 27
+reduce rule 25
+Shift IDENTIFIER
+Shift ASSIGNMENT
+reduce rule 35
+reduce rule 33
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift PLUS
+reduce rule 41
+reduce rule 53
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift STAR
+reduce rule 55
+Shift DIGSEQ
+reduce rule 47
+reduce rule 44
+Shift PLUS
+reduce rule 42
+reduce rule 53
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift STAR
+reduce rule 55
+Shift LPAREN
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift PLUS
+reduce rule 41
+reduce rule 53
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift STAR
+reduce rule 55
+Shift DIGSEQ
+reduce rule 47
+reduce rule 44
+Shift RPAREN
+reduce rule 42
+reduce rule 39
+reduce rule 51
+reduce rule 44
+Shift SEMICOLON
+reduce rule 42
+reduce rule 39
+reduce rule 27
+reduce rule 26
+Shift IDENTIFIER
+Shift LBRAC
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift PLUS
+reduce rule 41
+reduce rule 53
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift RBRAC
+reduce rule 42
+reduce rule 39
+Shift ASSIGNMENT
+reduce rule 35
+reduce rule 34
+reduce rule 33
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift PLUS
+reduce rule 41
+reduce rule 53
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift STAR
+reduce rule 55
+Shift DIGSEQ
+reduce rule 47
+reduce rule 44
+Shift PLUS
+reduce rule 42
+reduce rule 53
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift STAR
+reduce rule 55
+Shift LPAREN
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift PLUS
+reduce rule 41
+reduce rule 53
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift STAR
+reduce rule 55
+Shift DIGSEQ
+reduce rule 47
+reduce rule 44
+Shift RPAREN
+reduce rule 42
+reduce rule 39
+reduce rule 51
+reduce rule 44
+Shift SEMICOLON
+reduce rule 42
+reduce rule 39
+reduce rule 27
+reduce rule 26
+Shift IDENTIFIER
+Shift LBRAC
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift PLUS
+reduce rule 41
+reduce rule 53
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift STAR
+reduce rule 55
+Shift DIGSEQ
+reduce rule 47
+reduce rule 44
+Shift PLUS
+reduce rule 42
+reduce rule 53
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift STAR
+reduce rule 55
+Shift LPAREN
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift PLUS
+reduce rule 41
+reduce rule 53
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift STAR
+reduce rule 55
+Shift DIGSEQ
+reduce rule 47
+reduce rule 44
+Shift RPAREN
+reduce rule 42
+reduce rule 39
+reduce rule 51
+reduce rule 44
+Shift RBRAC
+reduce rule 42
+reduce rule 39
+Shift ASSIGNMENT
+reduce rule 35
+reduce rule 34
+reduce rule 33
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift PLUS
+reduce rule 41
+reduce rule 53
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift STAR
+reduce rule 55
+Shift DIGSEQ
+reduce rule 47
+reduce rule 44
+Shift PLUS
+reduce rule 42
+reduce rule 53
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift STAR
+reduce rule 55
+Shift LPAREN
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift PLUS
+reduce rule 41
+reduce rule 53
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift STAR
+reduce rule 55
+Shift DIGSEQ
+reduce rule 47
+reduce rule 44
+Shift RPAREN
+reduce rule 42
+reduce rule 39
+reduce rule 51
+reduce rule 44
+Shift END
+reduce rule 42
+reduce rule 39
+reduce rule 27
+reduce rule 26
+reduce rule 23
+reduce rule 22
+Shift DOT
+reduce rule 1
+-----------------------------------------------
+ PROGRAM
+        foo
+        (
+        input
+                ,
+                output
+                ,
+                error
+        )
+        ;
+        VAR
+        a
+                ,
+                b
+                ,
+                c
+        :
+        /type
+                integer
+        ;
+        VAR
+        d
+                ,
+                e
+        :
+        /type
+                ARRAY
+                [
+                1
+                ../n                10
+                ]
+                OF
+                /type
+                        integer
+        ;
+        /compound_statement
+                BEGIN
+                /optional_statements
+                        /statement_list
+                                /statement
+                                         /varible
+                                                a
+                                        :=
+                                        /expression 
+                                                /simple expression 
+                                                        /term
+                                                                2
+                                                        +
+                                                        /term
+                                                                99
+                                ;
+                                /statement
+                                         /varible
+                                                b
+                                        :=
+                                        /expression 
+                                                /simple expression 
+                                                        /term
+                                                                3
+                                                        +
+                                                        /term
+                                                                93
+                                                                *
+                                                                5
+                                                        +
+                                                        /term
+                                                                87
+                                                                *
+                                                                /factor
+                                                                        (
+                                                                        /expression 
+                                                                                /simple expression 
+                                                                                        /term
+                                                                                                23
+                                                                                        +
+                                                                                        /term
+                                                                                                15
+                                                                                                *
+                                                                                                6
+                                                                        )
+                                ;
+                                /statement
+                                         /varible
+                                                c
+                                                [
+                                                /expression 
+                                                        /simple expression 
+                                                                /term
+                                                                        4
+                                                                +
+                                                                /term
+                                                                        2
+                                                ]
+                                        :=
+                                        /expression 
+                                                /simple expression 
+                                                        /term
+                                                                3
+                                                        +
+                                                        /term
+                                                                9
+                                                                *
+                                                                5
+                                                        +
+                                                        /term
+                                                                87
+                                                                *
+                                                                /factor
+                                                                        (
+                                                                        /expression 
+                                                                                /simple expression 
+                                                                                        /term
+                                                                                                2
+                                                                                        +
+                                                                                        /term
+                                                                                                15
+                                                                                                *
+                                                                                                6
+                                                                        )
+                                ;
+                                /statement
+                                         /varible
+                                                c
+                                                [
+                                                /expression 
+                                                        /simple expression 
+                                                                /term
+                                                                        3
+                                                                +
+                                                                /term
+                                                                        9
+                                                                        *
+                                                                        5
+                                                                +
+                                                                /term
+                                                                        87
+                                                                        *
+                                                                        /factor
+                                                                                (
+                                                                                /expression 
+                                                                                        /simple expression 
+                                                                                                /term
+                                                                                                        2
+                                                                                                +
+                                                                                                /term
+                                                                                                        15
+                                                                                                        *
+                                                                                                        6
+                                                                                )
+                                                ]
+                                        :=
+                                        /expression 
+                                                /simple expression 
+                                                        /term
+                                                                3
+                                                        +
+                                                        /term
+                                                                9
+                                                                *
+                                                                5
+                                                        +
+                                                        /term
+                                                                8
+                                                                *
+                                                                /factor
+                                                                        (
+                                                                        /expression 
+                                                                                /simple expression 
+                                                                                        /term
+                                                                                                2
+                                                                                        +
+                                                                                        /term
+                                                                                                15
+                                                                                                *
+                                                                                                6
+                                                                        )
+                END
+        .

@@ -1,0 +1,282 @@
+Shift PROGRAM
+Shift IDENTIFIER
+Shift LPAREN
+Shift IDENTIFIER
+reduce rule 2
+Shift COMMA
+Shift IDENTIFIER
+reduce rule 3
+Shift COMMA
+Shift IDENTIFIER
+reduce rule 3
+Shift RPAREN
+Shift SEMICOLON
+reduce rule 5
+Shift VAR
+Shift IDENTIFIER
+reduce rule 2
+Shift COMMA
+Shift IDENTIFIER
+reduce rule 3
+Shift COLON
+Shift integer
+reduce rule 8
+reduce rule 6
+Shift SEMICOLON
+reduce rule 4
+Shift FUNCTION
+reduce rule 12
+Shift IDENTIFIER
+Shift LPAREN
+Shift IDENTIFIER
+reduce rule 21
+reduce rule 2
+Shift COLON
+Shift integer
+reduce rule 8
+reduce rule 6
+Shift RPAREN
+reduce rule 18
+reduce rule 16
+Shift COLON
+Shift integer
+reduce rule 8
+Shift SEMICOLON
+reduce rule 14
+reduce rule 5
+Shift BEGIN
+Shift IF
+Shift IDENTIFIER
+Shift LE
+reduce rule 35
+reduce rule 45
+reduce rule 43
+reduce rule 41
+reduce rule 60
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift THEN
+reduce rule 41
+reduce rule 40
+Shift IDENTIFIER
+Shift ASSIGNMENT
+reduce rule 35
+reduce rule 33
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift ELSE
+reduce rule 41
+reduce rule 39
+reduce rule 27
+Shift IDENTIFIER
+Shift ASSIGNMENT
+reduce rule 35
+reduce rule 33
+Shift IDENTIFIER
+Shift PLUS
+reduce rule 35
+reduce rule 45
+reduce rule 43
+reduce rule 41
+reduce rule 53
+Shift IDENTIFIER
+Shift LPAREN
+Shift IDENTIFIER
+Shift MINUS
+reduce rule 35
+reduce rule 45
+reduce rule 43
+reduce rule 41
+reduce rule 54 
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift RPAREN
+reduce rule 42
+reduce rule 39
+reduce rule 37
+reduce rule 46
+reduce rule 43
+Shift END
+reduce rule 42
+reduce rule 39
+reduce rule 27
+reduce rule 30
+reduce rule 25
+reduce rule 23
+reduce rule 22
+reduce rule 13
+Shift SEMICOLON
+reduce rule 11
+Shift BEGIN
+Shift IDENTIFIER
+Shift ASSIGNMENT
+reduce rule 35
+reduce rule 33
+Shift IDENTIFIER
+Shift LPAREN
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift RPAREN
+reduce rule 41
+reduce rule 39
+reduce rule 37
+reduce rule 46
+reduce rule 43
+Shift SEMICOLON
+reduce rule 41
+reduce rule 39
+reduce rule 27
+reduce rule 25
+Shift IDENTIFIER
+Shift ASSIGNMENT
+reduce rule 35
+reduce rule 33
+Shift IDENTIFIER
+Shift LPAREN
+Shift DIGSEQ
+reduce rule 47
+reduce rule 43
+Shift RPAREN
+reduce rule 41
+reduce rule 39
+reduce rule 37
+reduce rule 46
+reduce rule 43
+Shift END
+reduce rule 41
+reduce rule 39
+reduce rule 27
+reduce rule 26
+reduce rule 23
+reduce rule 22
+Shift DOT
+reduce rule 1
+-----------------------------------------------
+ PROGRAM
+        foo
+        (
+        input
+                ,
+                output
+                ,
+                error
+        )
+        ;
+        VAR
+        a
+                ,
+                b
+        :
+        /type
+                integer
+        ;
+         /subprogram_declarations
+         /subprogram_declaration
+                         /subprogram_head
+                                FUNCTION
+                                sum
+                                 /arguments
+                                        (
+                                         /PARAMETER_LISt
+                                                a
+                                                :
+                                                /type
+                                                        integer
+                                        )
+                                :
+                                integer
+                                ;
+                        /compound_statement
+                                BEGIN
+                                /optional_statements
+                                        /statement_list
+                                                /statement
+                                                        IF
+                                                        /expression 
+                                                                /simple expression 
+                                                                        /term
+                                                                                /factor
+                                                                                        a
+                                                                 <=
+                                                                /simple expression 
+                                                                        /term
+                                                                                0
+                                                         THEN
+                                                        /statement
+                                                                 /varible
+                                                                        sum
+                                                                :=
+                                                                /expression 
+                                                                        /simple expression 
+                                                                                /term
+                                                                                        0
+                                                        ELSE
+                                                        /statement
+                                                                 /varible
+                                                                        sum
+                                                                :=
+                                                                /expression 
+                                                                        /simple expression 
+                                                                                /term
+                                                                                        /factor
+                                                                                                a
+                                                                                +
+                                                                                /term
+                                                                                        /factor
+                                                                                                sum
+                                                                                                (
+                                                                                                /expression_list
+                                                                                                        /expression 
+                                                                                                                /simple expression 
+                                                                                                                        /term
+                                                                                                                                /factor
+                                                                                                                                        a
+                                                                                                                        -
+                                                                                                                        /term
+                                                                                                                                1
+                                                                                                )
+                                END
+        ;
+        /compound_statement
+                BEGIN
+                /optional_statements
+                        /statement_list
+                                /statement
+                                         /varible
+                                                a
+                                        :=
+                                        /expression 
+                                                /simple expression 
+                                                        /term
+                                                                /factor
+                                                                        sum
+                                                                        (
+                                                                        /expression_list
+                                                                                /expression 
+                                                                                        /simple expression 
+                                                                                                /term
+                                                                                                        10
+                                                                        )
+                                ;
+                                /statement
+                                         /varible
+                                                b
+                                        :=
+                                        /expression 
+                                                /simple expression 
+                                                        /term
+                                                                /factor
+                                                                        sum
+                                                                        (
+                                                                        /expression_list
+                                                                                /expression 
+                                                                                        /simple expression 
+                                                                                                /term
+                                                                                                        -10
+                                                                        )
+                END
+        .
